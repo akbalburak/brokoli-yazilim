@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim | Burak Akbal</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İletişim | Burak Akbal</title>
+  <link rel="stylesheet" href="contact.css"/>
 </head>
 <body>
-    <div class="contact-container">
-        <h1>İletişim</h1>
-        <p>Benimle iletişime geçmek için aşağıdaki formu doldurabilirsiniz.</p>
-        <form action="send.php" method="POST">
-            <input type="text" name="name" placeholder="Adınız" required>
-            <input type="email" name="email" placeholder="E-posta adresiniz" required>
-            <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
-    </div>
+  <div class="form-wrapper">
+    <form action="send.php" method="POST" class="contact-form">
+      <h2>📬 Benimle İletişime Geç</h2>
+      <p>Her türlü soru, öneri ya da iş birliği için mesaj gönderebilirsin!</p>
+
+      <div class="input-group">
+        <label for="name">Adınız</label>
+        <input type="text" name="name" id="name" required placeholder="Adınızı girin" />
+      </div>
+
+      <div class="input-group">
+        <label for="email">E-posta</label>
+        <input type="email" name="email" id="email" required placeholder="ornek@mail.com" />
+      </div>
+
+      <div class="input-group">
+        <label for="message">Mesaj</label>
+        <textarea name="message" id="message" rows="5" required placeholder="Mesajınızı yazın..."></textarea>
+      </div>
+
+      <button type="submit">Gönder ✉️</button>
+    </form>
+  </div>
 </body>
 </html>
