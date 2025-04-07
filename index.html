@@ -4,30 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>İletişim | Burak Akbal</title>
-  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="form-wrapper">
+  <div class="form-container">
     <form action="send.php" method="POST" class="contact-form">
-      <h2>📬 Benimle İletişime Geç</h2>
-      <p>Her türlü soru, öneri ya da iş birliği için mesaj gönderebilirsin!</p>
+      <h2>İletişim</h2>
+      <p class="subtitle">Projeler, iş birlikleri ya da sorular için benimle iletişime geçebilirsin.</p>
 
-      <div class="input-group">
+      <div class="form-group">
         <label for="name">Adınız</label>
-        <input type="text" name="name" id="name" required placeholder="Adınızı girin" />
+        <input type="text" id="name" name="name" placeholder="Ad Soyad" required />
       </div>
 
-      <div class="input-group">
+      <div class="form-group">
         <label for="email">E-posta</label>
-        <input type="email" name="email" id="email" required placeholder="ornek@mail.com" />
+        <input type="email" id="email" name="email" placeholder="ornek@mail.com" required />
       </div>
 
-      <div class="input-group">
+      <div class="form-group">
         <label for="message">Mesaj</label>
-        <textarea name="message" id="message" rows="5" required placeholder="Mesajınızı yazın..."></textarea>
+        <textarea id="message" name="message" placeholder="Mesajınızı yazın..." required></textarea>
       </div>
 
-      <button type="submit">Gönder ✉️</button>
+      <button type="submit">Gönder</button>
     </form>
   </div>
 </body>
