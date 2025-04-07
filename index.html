@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yapım Aşamasında</title>
-    <link rel="stylesheet" href="style.css">
+    <title>İletişim | Burak Akbal</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Yakında Buradayız!</h1>
-        <p>Web sitemiz şu anda yapım aşamasında. En kısa sürede sizlerle olacağız.</p>
+    <div class="contact-container">
+        <h1>İletişim</h1>
+        <p>Benimle iletişime geçmek için aşağıdaki formu doldurabilirsiniz.</p>
+        <form action="send.php" method="POST">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta adresiniz" required>
+            <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
     </div>
 </body>
 </html>
